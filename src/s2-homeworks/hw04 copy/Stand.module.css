@@ -1,8 +1,7 @@
 .stand {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 132px;
+    align-items: center;
 }
 
 .inputs {

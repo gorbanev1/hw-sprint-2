@@ -1,35 +1,94 @@
 .greetingForm {
+
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 10px;
 }
 
 .error {
+    color: red;
+
+}
+input.error {
+
 }
 
 .input {
+    min-width: 372px;
+    min-height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 3px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 8px  12px 8px 12px;
 }
 
 .input:focus {
+outline: none;
+
+
 }
 
+.input:hover {
+
+
+
+}
 .errorInput {
+    border: 1px solid #e74c3c;       /* Красная граница */
+    background-color: #ffebee;       /* Светло-красный фон */
+    color: #c0392b;
+    outline: none ;
+
 }
 
 .button {
+    border-radius: 3px;
+    min-width: 78px;
+    height: 36px;
+    background-color: #06C;
+    color: white;
+
+
 }
 
 .button:focus {
+
 }
 
 .button:active {
+
 }
 
+
 .button:disabled {
+    opacity: 0.5;
 }
 
 .text {
+    color: rgba(0, 0, 0, 0.50);
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 9px;
 }
 
 .greeting {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
