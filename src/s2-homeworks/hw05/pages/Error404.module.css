@@ -1,11 +1,13 @@
-.error404 {
-    width: 451px;
-    height: 100%;
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100vh - var(--header_height));
 }
 
-.wrapper {
-    align-items: center;
-    display: flex;
-    height: calc(100vh - var(--header_height));
-    justify-content: center;
+.error404 {
+    width: 451px;
+    max-width: 90vw;
+    height: auto; /* чтобы не растягивалась по высоте */
 }

@@ -1,9 +1,47 @@
 .select {
+    min-width: 171px;
+    height: 36px;
+    padding: 0 36px 0 12px;
+
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    background-color: #FFFFFF;
+
+    /* custom arrow */
+    background-image: url('./chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .select:focus {
+    outline: 1px solid black;
 }
 
+.select:hover {
+    border-color: #06C;
+}
+
+.option {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 .option:hover {
+    background-color: #E5F0FA;
 }
+

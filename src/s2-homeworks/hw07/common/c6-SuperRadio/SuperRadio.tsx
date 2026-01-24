@@ -45,7 +45,6 @@ console.log(value,'value')
 
     const mappedOptions: any[] = options
         ? options.map((o) => {
-            debugger
             return <label key={name + '-' + o.id} className={s.label}>
                 <input
                     id={id + '-input-' + o.id}
