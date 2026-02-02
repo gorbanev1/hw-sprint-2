@@ -23,23 +23,26 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
     ...restProps
 }) => {
     const mappedOptions: any[] = options
-        ? options.map((o) => (
-              <option
-                  id={'hw7-option-' + o.id}
-                  className={s.option}
-                  key={o.id}
-                  value={o.id}
-              >
-                  {o.value}
-              </option>
-          ))
+        ? options.map((o) => {
+            console.log(o.value, 'select')
+                return (<option
+                    id={'hw7-option-' + o.id}
+                    className={s.option}
+                    key={o.id}
+                    value={o.value}
+                >
+                    {o.value}
+                </option>)
+            }
+          )
         : [] // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
         // делают студенты
         onChange?.(e)
-        onChangeOption?.(Number(e.currentTarget.value))
+        onChangeOption?.(e.currentTarget.value)
         console.log(e.target.value, 'value  в выпадающем списке')
+        debugger
 
     }
 
