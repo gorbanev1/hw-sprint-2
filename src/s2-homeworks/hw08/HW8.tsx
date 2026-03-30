@@ -52,9 +52,8 @@ const HW8 = () => {
         ) // совершеннолетние
         setCurrentSort('18')
     }
-
     return (
-        <div id={'hw3'}>
+        <div id={'hw8'} >
             <div className={s2.hwTitle}>Homework #8</div>
             <div className={s2.hw}>
                 <div className={s.container}>
@@ -91,6 +90,7 @@ const HW8 = () => {
                         </thead>
 
                         <tbody>{finalPeople}</tbody>
+
                     </table>
                 </div>
             </div>
