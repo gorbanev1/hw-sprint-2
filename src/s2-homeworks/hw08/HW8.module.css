@@ -1,21 +1,26 @@
 .item {
-    padding: 16px 0;
-}
 
+}
+.item:hover {
+    background-color: #f9f9f9;
+}
 .item td{
-    padding: 16px 0;
+    padding: 16px 20px;
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .item:last-of-type {
+    border-bottom: none;
 }
-.button {
+.HW8button {
     height: 36px;
-    padding: 0 12px;
+    padding: 5px 24px;
     width: auto;
+    font-size: 14px;
 }
 
 .users {
-    margin:  8px 0;
+    margin:  12px 0;
     width: 100%;
     border-collapse:  collapse;
     border-spacing: 0;
@@ -36,19 +41,19 @@
 }
 
 .thead {
-
     background-color:#E5E5E5 ;
     font-weight: bold;
 }
 .thead td {
-    height: 48px;
+    padding: 11px 20px 9px;
     background-color: #E5E5E5;
     font-weight: 700;
     vertical-align: middle;
+
 }
 
 .nameCol {
-    width: 57%;
+    width: 36%;
     font-weight: 300;
 }
 
