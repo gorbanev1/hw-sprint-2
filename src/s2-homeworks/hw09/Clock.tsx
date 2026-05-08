@@ -13,6 +13,7 @@ function Clock() {
     const start = () => {
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
+        setDate(new Date())
         if (timerId!==undefined) return
         const interval=window.setInterval(()=>{
             setDate(new Date(Date.now()))
@@ -43,10 +44,10 @@ function Clock() {
         return `${hours}:${minutes}:${seconds}`
     }
     function getDate(date:Date){
-        const day = String(date.getDay()).padStart(2, '0')
-        const month = String(date.getMonth()).padStart(2, '0')
+        const day = String(date.getDate()).padStart(2, '0')
+        const month = String(date.getMonth()+1).padStart(2, '0')
         const year = String(date.getFullYear()).padStart(2, '0')
-        return `${day}:${month}:${year}`
+        return `${day}.${month}.${year}`
     }
 
     //'date->time'
@@ -56,9 +57,9 @@ function Clock() {
 
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     //'date->day'
-    const stringDay = date.getDay() || <br/> // пишут студенты
+    const stringDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(date) || <br/> // пишут студенты
     //'date->month'
-    const stringMonth = date.getMonth() || <br/> // пишут студенты
+    const stringMonth = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(date) || <br/> // пишут студенты
 
     return (
         <div className={s.clock}>
