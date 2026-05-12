@@ -13,13 +13,8 @@
 }
 
 .hwTitle {
-    margin: 0 70px;
+    margin: 0 70px 10px;
     display: flex;
     color: #000;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 10px;
+    font: 600 22px Montserrat, sans-serif;
 }

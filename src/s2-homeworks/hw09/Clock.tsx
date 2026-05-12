@@ -71,8 +71,8 @@ function Clock() {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
-                <span id={'hw9-day'}>{stringDay}</span>,{' '}
-                <span id={'hw9-time'}>
+                <span id={'hw9-day'} className={s.day}>{stringDay}</span>,{' '}
+                <span id={'hw9-time'} className={s.time}>
                     <strong>{stringTime}</strong>
                 </span>
             </div>

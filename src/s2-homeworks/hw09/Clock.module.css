@@ -1,7 +1,16 @@
 .buttonsContainer {
+    margin-top: 27px;
+    display: flex;
+    gap: 21px;
 }
 
+.buttonsContainer button {
+    width: 84px;
+    height: 30px;
+    padding: 0;
+}
 .clock {
+    font-family: Montserrat, sans-serif;
 }
 
 .watch {
@@ -11,4 +20,17 @@
 }
 
 .more {
+    margin: 10px 0 0 0 ;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+.day{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.time{
+    font-size: 20px;
+    font-weight: 600;
 }
