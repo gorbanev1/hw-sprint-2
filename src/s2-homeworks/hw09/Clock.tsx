@@ -59,9 +59,9 @@ function Clock() {
 
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     //'date->day'
-    const stringDay = new Intl.DateTimeFormat('ru-RU', { weekday: 'long' }).format(date) || <br/> // пишут студенты
+    const stringDay = new Intl.DateTimeFormat('en-EN', { weekday: 'long' }).format(date) || <br/> // пишут студенты
     //'date->month'
-    const stringMonth = new Intl.DateTimeFormat('ru-RU', { month: 'long' }).format(date) || <br/> // пишут студенты
+    const stringMonth = new Intl.DateTimeFormat('en-EN', { month: 'long' }).format(date) || <br/> // пишут студенты
 
     return (
         <div className={s.clock}>
