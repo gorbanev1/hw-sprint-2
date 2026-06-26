@@ -3,7 +3,6 @@ const initState = {
 }
 
 export const loadingReducer = (state = initState, action: any): any => { // fix any
-    debugger
     switch (action.type) {
 
         // пишет студент  // need to fix

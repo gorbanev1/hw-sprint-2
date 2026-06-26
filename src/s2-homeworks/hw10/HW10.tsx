@@ -23,7 +23,7 @@ const HW10 = () => {
 
         setTimeout(()=>{
             dispatch(loadingAC(false))
-        },700)
+        },5000)
     }
     return (
         <div id={'hw10'}>
