@@ -1,86 +1,72 @@
 .loader {
-    width: 100px;
-    height: 100px;
+    width: 108px;
+    height: 108px;
 
     box-sizing: border-box;
 
     display: grid;
     place-items: center;
 
-    position: relative;
     background: #fff;
 }
 
 .loader::before {
     content: '';
 
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
 
     background: #7b8cff;
 
     clip-path: polygon(
-            43% 0.5%,
-            57% 0.5%,
-            60.5% 13.5%,
-            68.4% 16.8%,
+            40% 0%,
+            60% 0%,
+            63% 14%,
+            70% 17%,
 
-            80.1% 10.1%,
-            89.9% 19.9%,
-            83.2% 31.6%,
-            86.5% 39.5%,
+            82% 9%,
+            91% 18%,
+            83% 30%,
+            86% 37%,
 
-            99.5% 43%,
-            99.5% 57%,
-            86.5% 60.5%,
-            83.2% 68.4%,
+            100% 40%,
+            100% 60%,
+            86% 63%,
+            83% 70%,
 
-            89.9% 80.1%,
-            80.1% 89.9%,
-            68.4% 83.2%,
-            60.5% 86.5%,
+            91% 82%,
+            82% 91%,
+            70% 83%,
+            63% 86%,
 
-            57% 99.5%,
-            43% 99.5%,
-            39.5% 86.5%,
-            31.6% 83.2%,
+            60% 100%,
+            40% 100%,
+            37% 86%,
+            30% 83%,
 
-            19.9% 89.9%,
-            10.1% 80.1%,
-            16.8% 68.4%,
-            13.5% 60.5%,
+            18% 91%,
+            9% 82%,
+            17% 70%,
+            14% 63%,
 
-            0.5% 57%,
-            0.5% 43%,
-            13.5% 39.5%,
-            16.8% 31.6%,
+            0% 60%,
+            0% 40%,
+            14% 37%,
+            17% 30%,
 
-            10.1% 19.9%,
-            19.9% 10.1%,
-            31.6% 16.8%,
-            39.5% 13.5%
+            9% 18%,
+            18% 9%,
+            30% 17%,
+            37% 14%
     );
 
-    animation: gear-spin 5s linear infinite;
+    -webkit-mask: radial-gradient(circle, transparent 0 15px, #000 16px);
+    mask: radial-gradient(circle, transparent 0 15px, #000 16px);
+
+    animation: loader-spin 1.5s linear infinite;
 }
 
-.loader::after {
-    content: '';
-
-    position: absolute;
-
-    width: 24px;
-    height: 24px;
-
-    background: #fff;
-    border-radius: 50%;
-}
-
-@keyframes gear-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
+@keyframes loader-spin {
     to {
         transform: rotate(360deg);
     }
