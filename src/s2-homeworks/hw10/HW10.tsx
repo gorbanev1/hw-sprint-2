@@ -5,6 +5,7 @@ import {loadingAC} from './bll/loadingReducer'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import s2 from '../../s1-main/App.module.css'
 import {Loader} from './Loader'
+import s from './Loader.module.css'
 
 /*
 * 1 - в файле loadingReducer.ts дописать типы и логику
@@ -23,7 +24,7 @@ const HW10 = () => {
 
         setTimeout(()=>{
             dispatch(loadingAC(false))
-        },5000)
+        },1500)
     }
     return (
         <div id={'hw10'}>
@@ -38,6 +39,7 @@ const HW10 = () => {
                     <SuperButton
                         id={'hw10-button-start-loading'}
                         onClick={setLoading}
+                        className={s.setLoaderButton}
                     >
                         Set loading...
                     </SuperButton>

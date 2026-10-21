@@ -71,3 +71,12 @@
         transform: rotate(360deg);
     }
 }
+.setLoaderButton {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    max-width: 93px;
+}
