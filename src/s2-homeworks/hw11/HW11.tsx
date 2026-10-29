@@ -23,6 +23,7 @@ function HW11() {
             setValue2(value[1])
         } else if (typeof value === 'number') {
             setValue1(value)
+
         }
     }
 
